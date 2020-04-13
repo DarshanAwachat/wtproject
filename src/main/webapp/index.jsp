@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
-<body class="bg-info">
-<header class="bg-info text-white ">
+<body style="background-image:url(./Images/stud.jpg)">
+<header class="bg-light">
 <div class="container">
  <div class="row">
  	<div class="col-sm-2">
@@ -13,8 +13,8 @@
  			<img src="Images/vit.png" class="d-flex mr-3 img-thumbnail align-self-center order-sm-last">
  		</div>
  	</div>
- 	<div class="col-sm-10">
- 		<h3 class="mt-3 mb-3">Vishwakarma Institute Of Technology</h3>
+ 	<div class="col-sm-10 align-self-center">
+ 		<h1 class="mt-3 mb-3 text-center align-self-center">Vishwakarma Institute Of Technology</h1>
 	</div>
 </div>
 </div>

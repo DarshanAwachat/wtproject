@@ -12,75 +12,103 @@
 
 </head>
 
-<body>
-<div class="header">
- 
+<body style="background-image:url(./Images/teach.jpg)">
+<header class="bg-light" style="opacity:50%">
+<div class="container">
  <div class="row">
- 	<div class="col">
- 		<img src="Images/vit.png" Style="padding-left:325px">
+ 	<div class="col-sm-2">
+ 		<div class="media">
+ 			<img src="Images/vit.png" class="d-flex mr-3 img-thumbnail align-self-center order-sm-last">
+ 		</div>
  	</div>
- 	<div class="col-8">
- 		<h1 style="padding-top:90px ">Vishwakarma Institute Of Technology</h1>
- 		<h3 style="padding-left:220px"> CS:3030</h3>
+ 	<div class="col-sm-10 align-self-center">
+ 		<h1 class="mt-3 mb-3 text-center align-self-center">Vishwakarma Institute Of Technology</h1>
 	</div>
- </div>
-</div>   
-<BR>
- 	<h2><center>File Upload to Database Demo</center></h2><br>
-	<div class="container" style="font-size:25px ">
-       <div class="row">
+</div>
+</div>
+</header>
+<BR>	
+	<div class="container" style="font-size:25px;opacity:90% ">
+       <div class="row justify-content-center">
+       <div class="card">
+		<h3 class="card-header bg-secondary text-white text-center">Question Upload to Database</h3>
+    	<div class="card-body bg-light">
         <Form method="post" action="Teacher" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <label for="Problem" class="col-form-label col-4">Problem statement: </label>
+                    <div class="col-8">
+                    	<textarea  class="form-control" name="Problem" rows="3" ></textarea>
+                	</div>
+                </div>
+                <div class="form-group row">
+                    <label for="opt1" class="col-form-label col-4">option 1: </label>
+                    <div class="col-8">
+                    	<input class="form-control" type="text" name="opt1" id="opt1"/>
+                	</div>
+                </div>
+               <div class="form-group row">
+                    <label for="opt2" class="col-form-label col-4">option 2: </label>
+                    <div class="col-8">
+                    	<input class="form-control" type="text" name="opt2" id="opt2"/>
+                	</div>
+                </div>
+               <div class="form-group row">
+                    <label for="opt3" class="col-form-label col-4">option 3: </label>
+                    <div class="col-8">
+                 	   <input class="form-control" type="text" name="opt3" id="opt3" />
+                	</div>
+                </div>
+                <div class="form-group row">
+                    <label for="opt4" class="col-form-label col-4">option 4: </label>
+                    <div class="col-8">
+                    	<input class="form-control" id="opt4" type="text" name="opt4" />
+                	</div>
+                </div>
+                <div class="form-group row">
+                    <label for="answer" class="col-form-label col-4">answer: </label>
+                    <div class="col-8">
+                	    <input class="form-control" id="answer" type="text" name="answer" />
+               		</div>
+                </div>
+                <div class="form-group row">
+                    <label for="photo" class="col-form-label col-4">Image: </label>
+                    <div class="col-8">
+                    	<input class="form-control" type="file" id="photo" name="photo" />
+                	</div>
+                </div>
+                <div class="form-group row">
+                    <label for="pts" class="col-form-label col-4">Img&nbsp;name:</label>
+                    <div class="col-8">
+                   		<input class="form-control" id="pts" type="text" name="pts"/>
+                	</div>
+                </div>
                 <div class="form-group">
-                    <label>Problem statement: </label>
-                    <textarea  class="form-control-lg" name="Problem" rows="3" ></textarea>
-                </div><BR>
-                <div class="form-group">
-                    <label>option 1: </label>
-                    <input class="form-control-lg" type="text" name="opt1" size="50"/>
-                </div><BR>
-               <div class="form-group">
-                    <label>option 2: </label>
-                    <input class="form-control-lg" type="text" name="opt2" size="50"/>
-                </div><BR>
-               <div class="form-group">
-                    <label>option 3: </label>
-                    <input class="form-control-lg" type="text" name="opt3" size="50"/>
-                </div><BR>
-                <div class="form-group">
-                    <label>option 4: </label>
-                    <input class="form-control-lg" type="text" name="opt4" size="50"/>
-                </div><BR>
-                <div class="form-group">
-                    <label>answer: </label>
-                    <input class="form-control-lg" type="text" name="answer" size="50"/>
-                </div><BR>
-                <div class="form-group">
-                    <label>Portrait Photo: </label>
-                    <input class="form-control-lg" type="file" name="photo" size="50"/>
-                </div><BR>
-                <div class="form-group">
-                    <label>Photo Name: </label>
-                    <input class="form-control-lg" type="text" name="pts" size="50"/>
-                </div><BR>
-                <center><button type="submit" class="btn btn-danger btn-lg">Submit</button></center><BR>
-        </form>
-</div><div>
-        	------------------------------------------------ OR ------------------------------------------------------------------
-       		</div><BR>
-
-        	<div class="row" >
-        	       <BR>
-        <form method="post" action="upload" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label>Upload excel-file:</label>
-                    <input class="form-control-lg" type="file" name="file" accept=".xls,.xlsx" size="50"/>
-                </div><BR>
-         		<div style="padding-left:215px">
-                <center><button  type="submit" class="btn btn-danger btn-lg">Submit</button></center><BR>
+                	<button type="submit" class="form-control col-6 offset-3 btn btn-lg btn-danger">Submit</button>
         		</div>
         </form>
-        
- </div>
+      </div>
+      </div>
+      </div>
+      <div class="row justify-content-center text-white">
+        	------OR------
+       </div>
+		<div class="row justify-content-center mb-3" >
+		<div class="card " style="width:45%;">
+    	<div class="card-body bg-light">
+        <form method="post" action="upload" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <label for="file" class="col-form-label col-4">Upload excel&nbsp;file:</label>
+                    <div class="col-8">
+                	    <input class="form-control" type="file" id="file" name="file" accept=".xls,.xlsx"/>
+                	</div>
+                </div>
+				<div class="form-group row">
+                	<button type="submit" class="form-control col-6 offset-3 btn-lg btn btn-danger">Submit</button>
+        		</div>
+        </form>
+        </div>
+        </div>       
+	 </div>
  </div>
 </body>
 </html>
