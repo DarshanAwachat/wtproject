@@ -1,0 +1,69 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GetLogin</servlet-name>
+  	<display-name>GetLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.gdp.GetLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetAnswer</servlet-name>
+  	<display-name>GetAnswer</display-name>
+  	<description></description>
+  	<servlet-class>com.gdp.GetAnswer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TeacherController</servlet-name>
+  	<display-name>TeacherController</display-name>
+  	<description></description>
+  	<servlet-class>com.gdp.TeacherController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ImageHelper</servlet-name>
+  	<display-name>ImageHelper</display-name>
+  	<description></description>
+  	<servlet-class>com.gdp.ImageHelper</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FileUploadHandler</servlet-name>
+  	<display-name>FileUploadHandler</display-name>
+  	<description></description>
+  	<servlet-class>com.gdp.FileUploadHandler</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FileToDB</servlet-name>
+  	<display-name>FileToDB</display-name>
+  	<description></description>
+  	<servlet-class>com.gdp.FileToDB</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetLogin</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetAnswer</servlet-name>
+  	<url-pattern>/answer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TeacherController</servlet-name>
+  	<url-pattern>/Teacher</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageHelper</servlet-name>
+  	<url-pattern>/help</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FileUploadHandler</servlet-name>
+  	<url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FileToDB</servlet-name>
+  	<url-pattern>/ftb</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
